@@ -10,7 +10,7 @@ class Bob
     response = ['Sure.','Whoa, chill out!','Fine. Be that way!', 'Whatever.']
 
     if
-    (remark.empty?) || remark.gsub(/\t/, '  ')
+    remark.empty?
       response[2]
 
 
