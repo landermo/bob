@@ -17,7 +17,7 @@ class Bob
       response[0]
 
     elsif
-    remark.empty?
+    remark.strip.empty?
       response[2]
 
     else
