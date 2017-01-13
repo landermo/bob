@@ -6,20 +6,21 @@
 
 
 class Bob
-  def initialize
-
-  end
   def hey(remark)
     response = ['Sure.','Whoa, chill out!','Fine. Be that way!', 'Whatever.']
 
-    if remark.upcase == remark
-      response[1]
+    if
+    (remark.empty?) || remark.gsub(/\t/, '  ')
+      response[2]
+
 
     elsif remark.end_with? '?'
       response[0]
+
     elsif
-    remark.empty?
-      response[2]
+    remark.upcase == remark
+      response[1]
+
     else
       response[3]
     end
