@@ -10,16 +10,15 @@ class Bob
     response = ['Sure.','Whoa, chill out!','Fine. Be that way!', 'Whatever.']
 
     if
-    remark.empty?
-      response[2]
-
+    remark.upcase == remark && remark.downcase != remark
+      response[1]
 
     elsif remark.end_with? '?'
       response[0]
 
     elsif
-    remark.upcase == remark
-      response[1]
+    remark.empty?
+      response[2]
 
     else
       response[3]
